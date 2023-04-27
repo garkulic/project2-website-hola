@@ -1,0 +1,23 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+Словарь
+{% endblock %}
+
+{% block content %}
+    <a class="btn btn-success btn-lg" href="{% url 'addword' %}">Добавить слово</a>
+    <h1> Словарь </h1>
+    {% if words %}
+        {% for el in words %}
+            <div class="alert alert-warning mt-2">
+                 <h3>{{el.word}}</h3>
+                <p>{{el.translate}}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>На данный момент словарь пуст. У нас всё впереди!</p>
+    {% endif %}
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+{% endblock %}

@@ -1,0 +1,32 @@
+h1 {
+    font-family: Courier New bold;
+    color: #272425;
+}
+h4 {
+    font-family: Courier New bold;
+    color: #272425;
+    font-style: italic;
+}
+h5 {
+    font-family: Courier New;
+}
+h6 {
+    font-family: Courier New;
+    color: #272425;
+}
+body {
+    background: #CBF4FF;
+}
+a {
+    font-family: Courier New ;
+    color: #135A5A;
+}
+
+.btn{
+    background-color: #135A5A;
+}
+ main {
+    margin-top: 30px;
+ }
+
+

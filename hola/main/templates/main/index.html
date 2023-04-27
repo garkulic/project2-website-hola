@@ -1,0 +1,22 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}
+Главная страница сайта
+{% endblock %}
+
+{% block content %}
+<h1> Главная страница </h1>
+<p>
+
+</p>
+<aside>
+<img src="{% static 'main/images/happy.png' %}"
+     class="img-thumbnail" align="left"  hspace="40">
+<hr>
+</aside>
+<main>
+    <p class="h4"> Нам с вами предстоит пройти увлекательный экспресс-курс испанского языка. ¡Vamos!</p>
+</main>
+{% endblock %}
+

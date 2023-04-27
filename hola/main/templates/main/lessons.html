@@ -1,0 +1,21 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+Уроки
+{% endblock %}
+
+{% block content %}
+    <h1>Уроки</h1>
+    {% if lessons %}
+        {% for el in lessons %}
+            <div>
+                <p class="h5 u"><u>{{el.name}}</u></p>
+                <p>{{el.date}}</p>
+                <p>{{el.lesson}}</p>
+                <h6><em>Сложность: {{el.rang}}/5</em> </h6>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>На данный момент информации о прошедших уроках пока нет. У нас всё вререди!</p>
+    {% endif %}
+{% endblock %}
