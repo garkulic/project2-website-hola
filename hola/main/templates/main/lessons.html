@@ -3,9 +3,10 @@
 {% block title %}
 Уроки
 {% endblock %}
-
+{% load static %}
 {% block content %}
     <h1>Уроки</h1>
+    <p><font size="5" color="#FFA500">Все материалы уроков вы можете найти в папке на Яндекс.диске <a href="https://disk.yandex.ru/d/N713E2zYNI3XFA"><img src="{% static 'main/images/folder-2.png' %}" width="32" height="32"/></a></font></p>
     {% if lessons %}
         {% for el in lessons %}
             <div>
